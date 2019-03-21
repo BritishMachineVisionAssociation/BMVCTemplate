@@ -1,4 +1,4 @@
-# BMVC Paper TEMPLATEs
+# BMVC Paper Templates
 
 This folder provides all the files necessary for produce both the review and final proceedings version of the paper.
 
