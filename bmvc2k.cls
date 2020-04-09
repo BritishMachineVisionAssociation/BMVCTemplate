@@ -37,6 +37,8 @@
 % 0.13 2017-07-06 Krystian Mikolajczyk <K.Mikolajczyk/at/imperial.ac.uk>
 %      Change year to 2017
 % 0.14 2019-03-06 David Marshall <MarshallAD@Cardiff.ac.uk>
+% 0.15 2020-04-09 Oisin Mac Aodha <oisin.macaodha@ed.ac.uk>
+%      Change year to 2020
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -78,12 +80,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2019}
+\def\BMVA@year{2020}
 
 %% -- CLASS FILE BOILERPLATE --
 
-\def\fileversion{0.14}
-\def\filedate{2019/03/06}
+\def\fileversion{0.15}
+\def\filedate{2020/04/09}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
@@ -101,7 +103,7 @@
 % We're based on the article class.
 \ProcessOptions
 \ifbmv@extabs
-% Extended abstract: one page, 
+% Extended abstract: one page,
 \LoadClass[a5paper,twoside]{article}
 \renewcommand{\normalsize}{\fontsize{9}{10pt}\selectfont}
 \renewcommand{\small}{\fontsize{8}{9pt}\selectfont}
@@ -171,7 +173,7 @@
 %   -----  |   |
 %          -----
 %
-% 
+%
 
 \def\bmvaHangBox#1{%^
 \begin{minipage}[t]{\textwidth}% Top-hanging minipage, will align on
@@ -327,7 +329,7 @@
 
 % We will explictly count the authors in bmv@nauthors
 % just to keep the code a bit clearer
-\newcount\bmv@nauthors 
+\newcount\bmv@nauthors
 \bmv@nauthors=0
 
 % bmv@ninsts -- Number of institutions
@@ -374,9 +376,9 @@
    \end{minipage}}
 
 % \addinstitution{Name\\Address}
-% This creates two display boxes: one with footnotemark, 
-% and one without. We make the boxes now so that we can 
-% deal with them without worrying about subsequent macro 
+% This creates two display boxes: one with footnotemark,
+% and one without. We make the boxes now so that we can
+% deal with them without worrying about subsequent macro
 % expansion.
 \long\def\addinstitution#1{
   \advance\bmv@ninsts1
@@ -393,12 +395,12 @@
 \def\bmv@RAIspace{}
 \fi
 
-% \bmv@RenderAuthInstTwoColumn 
-% Display authors on left and institutions on right 
-% Add footnotes if 
+% \bmv@RenderAuthInstTwoColumn
+% Display authors on left and institutions on right
+% Add footnotes if
 \def\bmv@RenderAuthInstTwoColumn{
 % Use footnotes if more than one institution
-% In future, one might be cleverer if the author order and 
+% In future, one might be cleverer if the author order and
 % institution order are both ascending
 \ifnum\bmv@ninsts>1
  \def\bmv@FN{FN}
@@ -423,7 +425,7 @@
 \end{minipage}
 }
 
-% \bmv@RenderAuthInstTable 
+% \bmv@RenderAuthInstTable
 % Display authors on left and institutions on right,
 % but look up the institution for each author
 \def\bmv@RenderAuthInstTable{
@@ -498,7 +500,7 @@
   \vskip\baselineskip
   \def\BMVA@blfootnote{\xdef\@thefnmark{}\@footnotetext}%^
   \BMVA@blfootnote{\null\hspace{-1.9em}\copyright{} \BMVA@year.
-    The copyright of this document resides with its authors.    
+    The copyright of this document resides with its authors.
 %\hfill doi:10.5244/C.\arabic{BMVA@shortyear}.NNN % DOI will be inserted directly on the PDF
 \\
     It may be distributed unchanged freely in print or electronic forms.}%^
@@ -596,7 +598,7 @@
 \let\bmv@makecaption=\@makecaption
 \def\@makecaption#1#2{\textcolor{bmv@captioncolor}{\bmv@makecaption{#1}{#2}}}
 
- 
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % RULER
 %% --------- Page background marks: Ruler and confidentiality
@@ -614,7 +616,7 @@
 \font\bmv@ruler@tenhv = phvb at 8pt % *** If this fails, see the lines after this one in bmvc2k.sty ***
 % If the above lines give an error message, try to comment them and
 % uncomment these:
-%\font\bmv@ruler@tenhv = phvb7t at 8pt 
+%\font\bmv@ruler@tenhv = phvb7t at 8pt
 
 %% \fillzeros[<WIDTH>]<NUMBER>
 % NUMBER with left flushed zeros
@@ -702,7 +704,7 @@
     /CA 1.0
     /T (Citation) ^^J
     /Contents (\bmv@annotation) ^^J
-    /XAP << % Appearance 
+    /XAP << % Appearance
       /N \bmv@theblank\space 0 R
       /D \bmv@theblank\space 0 R
       /R \bmv@theblank\space 0 R
@@ -710,7 +712,7 @@
     /Open false
    }%^
   \else
-    \pdfstartlink attr{#1 /PTEX.FullName (BMVCtest) }goto name{#2}\relax 
+    \pdfstartlink attr{#1 /PTEX.FullName (BMVCtest) }goto name{#2}\relax
   \fi}
 
 % hook into the natbib/hyperref citation hooks.
