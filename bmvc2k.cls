@@ -39,6 +39,8 @@
 % 0.14 2019-03-06 David Marshall <MarshallAD@Cardiff.ac.uk>
 % 0.15 2020-04-09 Oisin Mac Aodha <oisin.macaodha@ed.ac.uk>
 %      Change year to 2020
+% 0.16 2021-05-07 Tobias Ringwald <tobias.ringwald@kit.edu>
+%      Change year to 2021
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -80,12 +82,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2020}
+\def\BMVA@year{2021}
 
 %% -- CLASS FILE BOILERPLATE --
 
-\def\fileversion{0.15}
-\def\filedate{2020/04/09}
+\def\fileversion{0.16}
+\def\filedate{2021/05/07}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
