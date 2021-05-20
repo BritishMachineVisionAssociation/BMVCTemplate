@@ -39,6 +39,10 @@
 % 0.14 2019-03-06 David Marshall <MarshallAD@Cardiff.ac.uk>
 % 0.15 2020-04-09 Oisin Mac Aodha <oisin.macaodha@ed.ac.uk>
 %      Change year to 2020
+% 0.16 2021-05-21 Tu Bui <t.v.bui@surrey.ac.uk>
+%      Change year to 2021
+%      Replace color with xcolor
+%      Redefine BMVA@blfootnote
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -80,12 +84,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2020}
+\def\BMVA@year{2021}
 
 %% -- CLASS FILE BOILERPLATE --
 
-\def\fileversion{0.15}
-\def\filedate{2020/04/09}
+\def\fileversion{0.16}
+\def\filedate{2020/05/21}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
@@ -125,7 +129,7 @@
 \fi
 
 %% -- USEFUL PACKAGES --
-\RequirePackage{color}
+\RequirePackage{xcolor}
 \RequirePackage{graphicx,subfigure}
 \RequirePackage{xspace}
 \RequirePackage{eso-pic}
@@ -488,6 +492,14 @@
 \setcounter{BMVA@shortyear}\BMVA@year
 \addtocounter{BMVA@shortyear}{-1986}
 
+% remove hyperref warning with this
+\newcommand\BMVA@blfootnote[1]{%
+\begin{NoHyper}
+\renewcommand\thefootnote{}\footnote{#1}%
+\addtocounter{footnote}{-1}%
+\end{NoHyper}
+}
+
 \def\bmv@maketitle{\newpage\global\@topnum\z@%^
   \bmv@strut\\[-4pt]% vglue produces inconsistent results
   \begin{raggedright}%^
@@ -498,7 +510,7 @@
   \vskip\baselineskip
   \hrule
   \vskip\baselineskip
-  \def\BMVA@blfootnote{\xdef\@thefnmark{}\@footnotetext}%^
+  % \def\BMVA@blfootnote{\xdef\@thefnmark{}\@footnotetext}%^
   \BMVA@blfootnote{\null\hspace{-1.9em}\copyright{} \BMVA@year.
     The copyright of this document resides with its authors.
 %\hfill doi:10.5244/C.\arabic{BMVA@shortyear}.NNN % DOI will be inserted directly on the PDF
