@@ -43,6 +43,10 @@
 %      Change year to 2021
 %      Replace color with xcolor
 %      Redefine BMVA@blfootnote
+% 0.17 2021-10-19 Neill Campbell <n.campbell@bath.ac.uk>
+%      Fixed a bug in the author (and institution) expansion that would
+%      fail to expand in the double digits (> 9 authors). Fix is on
+%      lines 369 and 393 (extra braces escaping the counts added).
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -88,8 +92,8 @@
 
 %% -- CLASS FILE BOILERPLATE --
 
-\def\fileversion{0.16}
-\def\filedate{2020/05/21}
+\def\fileversion{0.17}
+\def\filedate{2021/10/19}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
@@ -366,7 +370,7 @@
   \bmv@savenewbox{authmail\the\bmv@nauthors}{\bmv@RenderAuthorMail{#2}}
   \bmv@newcount{authinst\the\bmv@nauthors}
   \bmv@setcount{authinst\the\bmv@nauthors}{#3}
-  \bmv@edefappend{\bmv@auths}{\the\bmv@nauthors}
+  \bmv@edefappend{\bmv@auths}{{\the\bmv@nauthors}}
 }
 
 % \bmv@RenderInst{Name\\Address}
@@ -390,7 +394,7 @@
   \bmv@savenewbox{instFN\the\bmv@ninsts}{%^
     \sffamily$\rule{0pt}{1ex}^{\mbox{\scriptsize \the\bmv@ninsts}}\,$%^
     \hbox{\bmv@RenderInst{#1}}}
-  \bmv@edefappend{\bmv@insts}{\the\bmv@ninsts}
+  \bmv@edefappend{\bmv@insts}{{\the\bmv@ninsts}}
 }
 
 \ifbmv@extabs
