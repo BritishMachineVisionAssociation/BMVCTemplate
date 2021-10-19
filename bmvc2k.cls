@@ -47,6 +47,8 @@
 %      Fixed a bug in the author (and institution) expansion that would
 %      fail to expand in the double digits (> 9 authors). Fix is on
 %      lines 369 and 393 (extra braces escaping the counts added).
+%      Also removed the institution matching logic since it fails under
+%      multiple institutions - will need to fix this at some point..
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -368,8 +370,10 @@
   \bmv@savenewbox{authname\the\bmv@nauthors}{\bmv@RenderAuthorName{#1}}
   \bmv@savenewbox{authnameFN\the\bmv@nauthors}{\bmv@RenderAuthorNameFN{#1}{#3}}
   \bmv@savenewbox{authmail\the\bmv@nauthors}{\bmv@RenderAuthorMail{#2}}
-  \bmv@newcount{authinst\the\bmv@nauthors}
-  \bmv@setcount{authinst\the\bmv@nauthors}{#3}
+  % NDFC Removing this logic since it breaks with multiple institutions
+  % at the moment - will fix at somepoint..
+  %\bmv@newcount{authinst\the\bmv@nauthors}
+  %\bmv@setcount{authinst\the\bmv@nauthors}{#3}
   \bmv@edefappend{\bmv@auths}{{\the\bmv@nauthors}}
 }
 
@@ -469,11 +473,13 @@
 % more than one institution.
 %  if equal to number of authors, then there's one each, so
 %  render one each..
-\ifnum\bmv@ninsts=\bmv@nauthors
-\bmv@RenderAuthInstTable
-\else
+% NDFC Removing this logic since it breaks with multiple institutions
+% at the moment - will fix at somepoint..
+%\ifnum\bmv@ninsts=\bmv@nauthors
+%\bmv@RenderAuthInstTable
+%\else
 \bmv@RenderAuthInstTwoColumn
-\fi
+%\fi
 \fi
 \fi
 }
