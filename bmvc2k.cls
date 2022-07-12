@@ -90,12 +90,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2021}
+\def\BMVA@year{2022}
 
 %% -- CLASS FILE BOILERPLATE --
 
 \def\fileversion{0.17}
-\def\filedate{2021/10/19}
+\def\filedate{2022/07/12}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
