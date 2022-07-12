@@ -49,6 +49,8 @@
 %      lines 369 and 393 (extra braces escaping the counts added).
 %      Also removed the institution matching logic since it fails under
 %      multiple institutions - will need to fix this at some point..
+% 0.18 2022-04-08 Jonathan Sadeghi <jon.sadeghi@five.ai>
+%      Swap deprecated subfigure package for subcaption.
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -136,7 +138,7 @@
 
 %% -- USEFUL PACKAGES --
 \RequirePackage{xcolor}
-\RequirePackage{graphicx,subfigure}
+\RequirePackage{graphicx,subcaption}
 \RequirePackage{xspace}
 \RequirePackage{eso-pic}
 \ifbmv@extabs
