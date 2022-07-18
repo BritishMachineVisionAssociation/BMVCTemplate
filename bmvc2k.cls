@@ -49,6 +49,9 @@
 %      lines 369 and 393 (extra braces escaping the counts added).
 %      Also removed the institution matching logic since it fails under
 %      multiple institutions - will need to fix this at some point..
+% 0.18 2022-07-18 Yaoyao Liu <yaoyao.liu@mpi-inf.mpg.de>
+%      Change year to 2022
+%      Change page limit to nine
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
