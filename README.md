@@ -28,4 +28,4 @@ https://cmt3.research.microsoft.com/BMVC2022
 
 A word template is also provided: `BMVC_MS_Office_2022_review.docx`
 
-More details on paper submission is at: https://www.bmvc2022.orgx/authors/submit-your-paper/
+More details on paper submission is at: https://www.bmvc2022.org/authors/submit-your-paper/
