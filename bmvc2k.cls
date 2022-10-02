@@ -50,8 +50,10 @@
 %      Also removed the institution matching logic since it fails under
 %      multiple institutions - will need to fix this at some point..
 % 0.18 2022-07-18 Yaoyao Liu <yaoyao.liu@mpi-inf.mpg.de>
-%      Change year to 2022
-%      Change page limit to nine
+%      Change year to 2022.
+%      Change the page limit to nine.
+% 0.19 2022-10-02 Yaoyao Liu <yaoyao.liu@mpi-inf.mpg.de>
+%      Change the page limit for the camera-ready version to ten.
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
