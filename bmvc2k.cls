@@ -54,6 +54,8 @@
 %      Change the page limit to nine.
 % 0.19 2022-10-02 Yaoyao Liu <yaoyao.liu@mpi-inf.mpg.de>
 %      Change the page limit for the camera-ready version to ten.
+% 0.20 2023-05-07 Yaoyao Liu <yliu538@jhu.edu>
+%      Change year to 2023.
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -95,12 +97,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2022}
+\def\BMVA@year{2023}
 
 %% -- CLASS FILE BOILERPLATE --
 
-\def\fileversion{0.17}
-\def\filedate{2022/07/12}
+\def\fileversion{0.20}
+\def\filedate{2023/05/07}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
