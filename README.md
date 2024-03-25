@@ -1,4 +1,4 @@
-# BMVC Paper Templates
+# BMVC Paper Templates, 2024 Version
 
 This folder provides all the files necessary to produce both the review and final proceedings version of the paper.
 
