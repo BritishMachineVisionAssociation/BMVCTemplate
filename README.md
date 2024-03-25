@@ -22,7 +22,7 @@ Essentially to produce the review paper you must include the command:
 
 in the LaTeX preamble.
 
-The `??` is the paper number your are assigned when registering your paper on the OpenReview submission web site:
+The `??` is the paper number your are assigned when registering your paper on the OpenReview submission website:
 
 A word template is also provided: `BMVC_MS_Office_2024review.docx`
 
