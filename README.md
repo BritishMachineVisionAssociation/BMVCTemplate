@@ -22,10 +22,10 @@ Essentially to produce the review paper you must include the command:
 
 in the LaTeX preamble.
 
-The `??` is the paper number your are assigned when registering your paper on the CMT submission web site:
-https://cmt3.research.microsoft.com/BMVC2023
+The `??` is the paper number your are assigned when registering your paper on the OpenReview submission web site:
+[https://openreview.net/group?id=bmva.org/BMVC/2025/Conference](https://openreview.net/group?id=bmva.org/BMVC/2025/Conference)
 
 
-A word template is also provided: `BMVC_MS_Office_2023_review.docx`
+A word template is also provided: `BMVC_MS_Office_2025_review.docx`
 
-More details on paper submission is at: https://www.bmvc2023.org/authors/submit-your-paper/
+More details on paper submission is at: [https://www.bmvc2025.org/authors/submit-your-paper/](https://bmvc2025.bmva.org/authors/submit-your-paper/)
