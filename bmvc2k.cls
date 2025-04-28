@@ -56,6 +56,8 @@
 %      Change the page limit for the camera-ready version to ten.
 % 0.20 2023-05-07 Yaoyao Liu <yliu538@jhu.edu>
 %      Change year to 2023.
+% 0.21 2025-04-28 Steve Maddock <s.maddock@sheffield.ac.uk>
+%      Change year to 2025.
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -97,12 +99,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2023}
+\def\BMVA@year{2025}
 
 %% -- CLASS FILE BOILERPLATE --
 
 \def\fileversion{0.20}
-\def\filedate{2023/05/07}
+\def\filedate{2025/04/28}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
