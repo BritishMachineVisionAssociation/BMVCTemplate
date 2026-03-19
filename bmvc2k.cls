@@ -58,6 +58,8 @@
 %      Change year to 2023.
 % 0.21 2025-04-28 Steve Maddock <s.maddock@sheffield.ac.uk>
 %      Change year to 2025.
+% 0.22 2026-02-18 BMVC2026 Programme Chairs
+%      Change year to 2026.
 %------------------------------------------------------------------------------
 % Copyright 2007 Adrian F. Clark <alien/at/essex.ac.uk>.  All rights reserved.
 %------------------------------------------------------------------------------
@@ -99,12 +101,12 @@
 
 
 %% Change the year...
-\def\BMVA@year{2025}
+\def\BMVA@year{2026}
 
 %% -- CLASS FILE BOILERPLATE --
 
-\def\fileversion{0.20}
-\def\filedate{2025/04/28}
+\def\fileversion{0.22}
+\def\filedate{2026/02/18}
 
 \newif\ifbmv@extabs
 \bmv@extabsfalse
